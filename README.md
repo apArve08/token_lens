@@ -21,6 +21,20 @@ The project is a self-contained HTML/JavaScript application. It implements:
 3.  **Training Loop**: Uses the Adam optimizer and cross-entropy loss to train the model directly in the browser's main thread.
 4.  **PCA Projection**: Reduces the 32-dimensional embedding vectors to 2D for visualization.
 
+## 🔮 Future Improvements & Roadmap
+
+Here are some ideas for extending the project to further its educational and technical goals:
+
+- **Custom Corpus Support**: Allow users to upload their own `.txt` files to train the BPE tokenizer and Transformer on their own data.
+- **Hyperparameter Tuning**: Add sliders to adjust learning rate, embedding dimension, number of heads, and layer count in real-time.
+- **GPU Acceleration**: Migrate the training loop to WebGL or WebGPU (via libraries like TensorFlow.js or torch.js) to support larger models.
+- **Advanced Visualizations**: 
+    - Logit lens: Visualize how the prediction changes layer-by-layer.
+    - Weight visualization: Explore the Q, K, V matrices as heatmaps.
+- **Pre-trained Weights**: Provide a way to load small, pre-trained weights to see "mature" attention patterns immediately.
+- **Multi-layer Support**: Expand from a single layer to a multi-layer transformer to demonstrate hierarchical feature learning.
+
+
 ## 🛠️ Installation & Usage
 
 Since it is a single-file web application, no installation is required.
