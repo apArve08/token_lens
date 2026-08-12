@@ -273,7 +273,7 @@ function trainBPE(){
         pc.set(k,(pc.get(k)||0)+e.f);
       }
     }
-    let best=null,bc=1; // require count >= 2
+    let best=null,bc=1; // require count >= 2 test 1
     for(const [k,c] of pc) if(c>bc){bc=c;best=k;}
     if(!best) break;
     const [a,b]=best.split("\u0000"), ab=a+b;
